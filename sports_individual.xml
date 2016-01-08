@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border_top_bottom_grey" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+	    <TextView
+	        android:id="@+id/sportName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:text="Men's Basketball">
+	    </TextView>
+	    
+	    <TextView
+	        android:id="@+id/date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:textSize="18sp"
+	        android:text="1/2/2016 2:30:00 PM">
+	    </TextView>
+	    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+	    
+        <ImageView
+            android:id="@+id/homeLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/app_icon_48">
+        </ImageView>
+        
+        <TextView
+            android:id="@+id/homeScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/homeLogo"
+            android:paddingLeft="10sp"
+            android:textSize="30sp"
+            android:text="68">
+        </TextView>
+        
+        <ImageView
+            android:id="@+id/resultImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/app_icon_48">
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/awayLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/app_icon_48">
+        </ImageView>
+        
+        <TextView
+            android:id="@+id/awayScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/awayLogo"
+            android:paddingRight="10sp"
+            android:textSize="30sp"
+            android:text="73">
+        </TextView>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <TextView
+            android:id="@+id/homeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Wolfpack">
+        </TextView>
+        
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:text="Blacksburg, Va.">
+        </TextView>
+        
+        <TextView
+            android:id="@+id/awayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Virginia Tech">
+        </TextView>
+        
+    </RelativeLayout>
+
+    
+</LinearLayout>
